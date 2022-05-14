@@ -1,0 +1,27 @@
+{
+    "name": "jtlimson/gcf-php-docker",
+    "authors": [
+        {
+            "name": "LIMSON Julius",
+            "email": "me@juliuslimson.com"
+        }
+    ],
+    "config": {
+        "platform": {
+            "php": "7.4"
+        }
+    },
+    "require": {
+        "google/cloud-functions-framework": "^1.1"
+    },
+    "autoload": {
+        "psr-4": {
+            "App\\": "app/"
+        }
+    },
+    "scripts": {
+        "start": [
+           "Composer\\Config::disableProcessTimeout"
+        ]
+    }
+}

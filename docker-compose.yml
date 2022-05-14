@@ -1,0 +1,15 @@
+version: '3'
+
+networks:
+  gcf-php-docker-network:
+
+services:
+  site:
+    build: .
+    container_name: gcf-php-docker
+    ports:
+      - 8080:8080
+    volumes:
+      - ./src:/srv/
+    networks:
+      - gcf-php-docker-network
